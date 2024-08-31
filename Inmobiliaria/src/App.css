@@ -54,7 +54,7 @@ nav ul li a:hover {
     background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg67GVL8f4KgnMznKKoMmatEjjezF6D3yDdzewMuczzjKx5dChyLXPuFXl16S-X44GE7Oe5xfNZuOpF-E0zFM0Hlepq5zG4lUJiQFrUrrNZ4rL29iiis2qKE82eYQA1AA9GkEWcGOiaVRG84l4lpN-yOX2fpCpRch2CReasXhULHVwOW9eIIuQJMjzv7Xc/s1600/hero.jpeg');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,6 +68,47 @@ nav ul li a:hover {
     padding: 2rem;
     border-radius: 8px;
     max-width: 600px;
+}
+
+
+.hero2 {
+    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigQKu6s2iJMtULd0qgW3KHNH9Pq32nELNHMZx1jxuSN26HZWzkmpGco-xBmWqqjpiMGDwjnF3R-NHzaFa6COXWI55bi3EygZ76Pwoir9JzMVrS70ym6L_CXf4Z-LsBQsPiQIfs_VHo_E3fxotjzmHAbRo0aUIcGHpgMIxN6BPSDUNPuhSbZLcLNd9ntew/s1600/hero2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.hero2-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 400px;
+}
+
+.hero3 {
+    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgYvDJfnnI50H2BuMYqrCo4E887Dct-8JY3JHClEtTA0lboOLsFCNYWkbykT2qnIVq_sCGTNvUi7UI9W_3W1VbPUMsGxlfQu96K3_Oe2mCYOVC7jKRjkd_IFvtkEI33mbGMyxn8i-rtsYTwE2EHatmZEed80dF6hXDrFbx-y9NH42N1b7RJ7K7KOCOc5s/s1600/n2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.hero2-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 400px;
 }
 
 .hero h1 {
@@ -95,7 +136,10 @@ nav ul li a:hover {
 }
 
 main {
+   
     padding: 4rem 5%;
+    width: 125%; /* Ajusta este valor según lo que necesites */
+    margin: 0 auto; /* Centra horizontalmente */
 }
 
 section {
@@ -112,6 +156,9 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
+    
+    width: 125%; /* Ajusta este valor según lo que necesites */
+    margin: 0 auto; /* Centra horizontalmente */
 }
 
 nav ul li a {
@@ -426,4 +473,75 @@ nav ul li a.active {
 .maps{
     box-sizing: border-box;
     padding: 0rem;
+}
+
+
+
+
+/* Contenedor principal para la sección destacados */
+#destacados .section-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribuye espacio uniformemente */
+    gap: 20px;
+    padding: 20px 0;
+}
+
+/* Estilo para los elementos destacados */
+.content_destacado {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    flex: 0 1 calc(25% - 20px); /* 25% del ancho del contenedor menos el gap */
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+}
+
+.content_destacado:hover {
+    transform: scale(1.05);
+}
+
+/* Imagen dentro de los destacados */
+.imgUlt {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* Esto asegura que las imágenes mantengan su aspecto */
+}
+
+/* Título de los destacados */
+.font_desc_cat {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #023A76;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+/* Botones de acción (venta/alquiler) */
+.btnVenta, .btnAlquiler {
+    display: inline-block;
+    background-color: #023A76;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btnVenta:hover, .btnAlquiler:hover {
+    background-color: #0056b3;
+}
+
+/* Título principal */
+.section-title {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #023A76;
+    text-align: center;
+    margin-bottom: 20px;
 }

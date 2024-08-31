@@ -1,4 +1,8 @@
 import { Fragment } from "react";
+import Carusel from "./Carusel";
+import Formulario from "../Formulario";
+import Destacados from "./Destacados";
+
 
 function Cuerpo()
 {
@@ -6,13 +10,9 @@ function Cuerpo()
         <>
    
         <main>
-      <section id="inicio" className="hero">
-        <div className="hero-content">
-          <h1>Inmobiliaria Horizon</h1>
-          <p>Nos especializamos en la venta y alquiler de propiedades residenciales y comerciales en áreas urbanas y suburbanas. Proporcionando un servicio personalizado que satisfaga las necesidades específicas de cada cliente.</p>
-          <a href="#contacto" className="btn">Contáctanos</a>
-        </div>
-      </section>
+        <Carusel/>
+
+
 
       <section id="quienes-somos">
         <div class="section-content">
@@ -76,6 +76,16 @@ function Cuerpo()
                     </ul>
                 </div>
 
+            </div>
+      </section>
+
+
+      <section id="destacados">
+      <div class="section-content">
+                <h2 class="section-title">Servicios Destacados</h2>
+                <div class="experience-grid">
+                <Destacados/>
+                </div>
             </div>
       </section>
 
@@ -145,26 +155,11 @@ function Cuerpo()
                 </div>
             </div>
       </section>
+     
 
       <section id="contacto">
       <div class="section-content">
-                <h2 class="section-title">Contacto</h2>
-                <div class="contact-info">
-                    <h3>Información de Contacto</h3>
-                    <p><strong>Dirección:</strong> Lince, Lima, PERÚ</p>
-                    <p><strong>Correo Electrónico:</strong> inmobiliariahorizon@gmail.com</p>
-                    <p><strong>Celular:</strong> +51 987654321</p>
-                </div>
-                <div class="contact-form">
-                    <h3>Envíanos un Mensaje</h3>
-                    <form>
-                        <input type="text" placeholder="Nombre y Apellidos" required/>
-                        <input type="email" placeholder="Correo Electrónico" required/>
-                        <input type="text" placeholder="Asunto" required/>
-                        <textarea placeholder="Mensaje" rows="4" required></textarea>
-                        <button type="submit">Enviar</button>
-                    </form>
-                </div>
+               <Formulario/>
        
             </div>
       </section>
